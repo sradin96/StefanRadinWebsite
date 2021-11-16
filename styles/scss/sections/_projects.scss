@@ -1,0 +1,91 @@
+.projects {
+  margin-bottom: 100px;
+}
+
+.project__card {
+  display: flex;
+  min-height: 300px;
+  border-radius: 12px;
+  box-shadow: 0 1px 10px -5px $gray;
+  margin-bottom: 50px;
+  @include breakpoint('touch') {
+    flex-direction: column;
+    width: 100%;
+  }
+}
+
+.project__info {
+  width: 50%;
+  padding: 50px;
+  @include breakpoint('touch') {
+    width: 100%;
+    min-height: 260px;
+    height: 100%;
+    padding: 20px;
+  }
+}
+
+.project__subtitle {
+  color: $gray;
+  font-size: 32px;
+  margin-bottom: 20px;
+  @include breakpoint('phone') {
+    font-size: 28px;
+  }
+}
+
+.project__text {
+  line-height: 24px;
+  color: $gray;
+  margin-bottom: 90px;
+  @include breakpoint('tablet') {
+    margin-bottom: 30px;
+  }
+  @include breakpoint('phone') {
+    font-size: 14px;
+    margin-bottom: 20px;
+  }
+}
+
+.project__btns {
+  display: flex;
+  align-items: center;
+}
+
+.project__link {
+  margin-right: 20px;
+  background: $blue;
+  color: $white;
+  padding: 10px 15px;
+  font-size: 14px;
+  border-radius: 12px;
+  opacity: 1;
+  transition: $transition;
+  &:hover {
+    opacity: 0.9;
+  }
+}
+
+.link-icon {
+  border-radius: 50%;
+  padding: 10px;
+}
+
+.project__icon {
+  color: $white;
+  background: $blue;
+}
+
+.project__img-block {
+  width: 50%;
+  border-radius: 12px;
+  @include breakpoint('touch') {
+    width: 100%;
+  }
+}
+
+.project__img {
+  width: 100%;
+  height: 100%;
+  border-radius: 12px;
+}

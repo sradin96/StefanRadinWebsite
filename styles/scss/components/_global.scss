@@ -1,0 +1,71 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+.main {
+  margin-top: 79px;
+  overflow: hidden;
+}
+
+.wrapper {
+  max-width: 1260px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+.text-bold {
+  font-weight: 700;
+}
+
+.has-cover {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.title {
+  text-align: center;
+  color: $blue;
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 100px;
+  @include breakpoint('touch') {
+    margin-bottom: 50px;
+  }
+}
+
+.fa-github,
+.fa-linkedin-in {
+  color: $blue;
+  font-size: 28px;
+  transition: $transition;
+  &:hover {
+    transform: scale(1.2);
+  }
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: $white;
+}
+
+::-webkit-scrollbar-thumb {
+  background: $blue;
+}

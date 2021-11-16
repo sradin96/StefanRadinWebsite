@@ -1,0 +1,205 @@
+.contact {
+  margin-bottom: 100px;
+}
+
+.contact__container {
+  display: flex;
+  align-items: center;
+  @include breakpoint('phone') {
+    flex-direction: column;
+  }
+}
+
+.contact__info {
+  background: $blue;
+  width: 35%;
+  padding: 30px;
+  text-align: center;
+  border-top-left-radius: 12px;
+  border-bottom-left-radius: 12px;
+  @include breakpoint('phone') {
+    width: 100%;
+    border-radius: 12px;
+  }
+}
+
+.contact__icon {
+  color: $white;
+  font-size: 62px;
+  margin-bottom: 20px;
+}
+
+.contact__subtitle {
+  color: $white;
+  margin-bottom: 10px;
+}
+
+.contact__text {
+  color: $white;
+  line-height: 24px;
+  margin-bottom: 30px;
+}
+
+.contact__subtext {
+  display: block;
+  color: $white;
+}
+
+.contact__link {
+  color: $white;
+  display: inline-block;
+  font-weight: 500;
+  position: relative;
+  transition: $transition;
+  margin-top: 10px;
+  &::after {
+    content: '';
+    background: $white;
+    width: 0%;
+    height: 2px;
+    position: absolute;
+    bottom: -2px;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: $transition;
+  }
+  &:hover::after {
+    width: 100%;
+  }
+}
+
+.contact__form {
+  max-width: 65%;
+  box-shadow: 0 1px 10px -5px $gray;
+  height: 450px;
+  padding: 25px;
+  width: 100%;
+  border-radius: 12px;
+  @include breakpoint('phone') {
+    max-width: 100%;
+    height: 500px;
+    padding: 15px;
+  }
+}
+
+.form__info {
+  display: flex;
+  width: 100%;
+  margin: 0 -10px 30px -10px;
+  @include breakpoint('phone') {
+    flex-direction: column;
+    margin: 0;
+  }
+}
+
+.form__text {
+  display: block;
+  color: $gray;
+  margin-bottom: 10px;
+}
+
+.form__name {
+  width: 50%;
+  padding: 0 10px;
+  @include breakpoint('phone') {
+    width: 100%;
+    padding: 0;
+    margin-bottom: 10px;
+  }
+}
+
+.form__input {
+  width: 100%;
+  outline: none;
+  padding: 15px;
+  border-radius: 12px;
+  border: none;
+  background: $lite-gray;
+  font-family: 'Montserrat', sans-serif;
+  transition: $transition;
+  &:focus {
+    background: $blue;
+    color: $white;
+  }
+  &:focus::placeholder {
+    color: $white;
+  }
+  &:not(:placeholder-shown) {
+    background: $blue;
+    color: $white;
+  }
+}
+
+.form__textarea {
+  width: 100%;
+  min-height: 212px;
+  resize: none;
+  border: none;
+  outline: none;
+  background: $lite-gray;
+  padding: 15px;
+  font-family: 'Montserrat', sans-serif;
+  margin-bottom: 10px;
+  border-radius: 12px;
+  transition: $transition;
+  &:focus {
+    background: $blue;
+    color: $white;
+  }
+  &:focus::placeholder {
+    color: $white;
+  }
+  &:not(:placeholder-shown) {
+    background: $blue;
+    color: $white;
+  }
+}
+
+.form__btn {
+  float: right;
+  padding: 10px 30px;
+  display: block;
+  outline: none;
+  border: none;
+  border-radius: 12px;
+  background: $blue;
+  color: $white;
+  cursor: pointer;
+  opacity: 1;
+  transition: $transition;
+  &:hover {
+    opacity: 0.9;
+  }
+}
+
+.form__btn-icon {
+  margin-right: 5px;
+}
+
+.form__block {
+  position: relative;
+}
+
+.form__warning {
+  font-size: 12px;
+  position: absolute;
+  bottom: 100px;
+  left: 10px;
+  color: $warning;
+  opacity: 0;
+  display: block;
+  pointer-events: none;
+  transition: $transition;
+}
+
+.warning-error {
+  opacity: 0.6;
+  bottom: -20px;
+  left: 10px;
+  pointer-events: all;
+}
+
+.warning-textarea {
+  bottom: -10px;
+  left: 0;
+}

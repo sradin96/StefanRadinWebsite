@@ -1,0 +1,108 @@
+.banner {
+  position: relative;
+  margin-bottom: 150px;
+  @include breakpoint('phone') {
+    margin-bottom: 80px;
+  }
+}
+
+.banner__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 200px;
+  @include breakpoint('tablet') {
+    padding-top: 100px;
+  }
+  @include breakpoint('phone') {
+    flex-direction: column;
+    padding-top: 60px;
+  }
+}
+
+.banner__content {
+  @include breakpoint('phone') {
+    text-align: center;
+    margin-bottom: 50px;
+  }
+}
+
+.banner__title {
+  color: $gray;
+  font-size: 56px;
+}
+
+.banner__text {
+  font-size: 24px;
+  display: block;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 30px;
+}
+
+.banner__btn {
+  display: inline-block;
+  padding: 10px;
+  background: $blue;
+  font-weight: 500;
+  font-size: 14px;
+  color: $white;
+  border-radius: 12px;
+  margin-bottom: 20px;
+  border: 3px solid $blue;
+  transition: $transition;
+  &:hover {
+    background: $white;
+    color: $blue;
+  }
+}
+
+.banner__social {
+  margin-right: 30px;
+  @include breakpoint('phone') {
+    margin: 0 20px;
+  }
+}
+
+.banner__card {
+  background: $white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 1px 10px -5px $blue;
+  @include breakpoint('touch') {
+    background: $blue;
+    box-shadow: 0 1px 10px -5px $gray;
+  }
+  @include breakpoint('phone') {
+    padding: 15px;
+  }
+}
+
+.banner__item {
+  margin: 0 0 10px 0px;
+  color: $blue;
+  @include breakpoint('touch') {
+    color: $white;
+  }
+}
+
+.item--padding-small {
+  padding-left: 20px;
+}
+
+.item--padding-big {
+  padding-left: 40px;
+}
+
+.banner__big-box {
+  width: 1200px;
+  height: 1200px;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  z-index: -1;
+  transform: rotate(125deg) translate(-900px, -120px);
+  @include breakpoint('touch') {
+    display: none;
+  }
+}

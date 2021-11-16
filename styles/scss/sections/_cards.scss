@@ -1,0 +1,43 @@
+.cards {
+  margin-bottom: 100px;
+}
+
+.cards__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  @include breakpoint('phone') {
+    flex-direction: column;
+  }
+}
+
+.cards__card {
+  max-width: 25%;
+  background: $white;
+  text-align: center;
+  border-radius: 12px;
+  padding: 30px;
+  box-shadow: 0 1px 10px -5px $gray;
+  min-height: 230px;
+  @include breakpoint('tablet') {
+    max-width: 30%;
+  }
+  @include breakpoint('phone') {
+    max-width: 100%;
+    width: 100%;
+    min-height: 150px;
+    margin-bottom: 20px;
+  }
+}
+
+.card__icon {
+  font-size: 46px;
+  color: $blue;
+  margin-bottom: 30px;
+}
+
+.card__title {
+  color: $gray;
+  font-size: 20px;
+  margin-bottom: 15px;
+}

@@ -1,0 +1,22 @@
+.footer {
+  background: $blue;
+  padding: 15px 0;
+}
+
+.footer__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  @include breakpoint('phone') {
+    flex-direction: column-reverse;
+  }
+}
+
+.footer__text {
+  display: block;
+  color: $white;
+  @include breakpoint('phone') {
+    margin: 10px;
+    text-align: center;
+  }
+}

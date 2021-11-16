@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./node_modules/@fortawesome/fontawesome-free/css/all.min.css">
+    <link rel="stylesheet" href="./styles/css/main.css">
+    <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
+    <title>Stefan Radin | Portfolio</title>
+</head>
+<body>
+    <header class="header">
+        <div class="wrapper">
+            <div class="header__container">
+                <a href="./index.html" class="header__logo"><img src="./images/logo.png" alt="" class="header__logo-img"></a>
+                <button class="header__menu-btn"><span class="header__menu"></span></button>
+                <ul class="header__list">
+                    <li class="header__item"><a href="javascript:;" class="header__link home-js">Home</a></li>
+                    <li class="header__item"><a href="javascript:;" class="header__link about-js">About me</a></li>
+                    <li class="header__item"><a href="javascript:;" class="header__link projects-js">Projects</a></li>
+                    <li class="header__item"><a href="javascript:;" class="header__link contact-js">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <main class="main">
+        <section class="banner">
+            <div class="wrapper">
+                <div class="banner__container">
+                    <div class="banner__content">
+                        <span class="banner__small-text">Hello, I'm</span>
+                        <h1 class="banner__title">Stefan Radin</h1>
+                        <span class="banner__text">Front-end Developer</span>
+                        <a href="./files/StefanRadinCV.pdf" class="banner__btn" download>Download Resume</a>
+                        <div class="banner__socials">
+                            <a href="https://github.com/sradin96" class="banner__social" target="_blank"><i class="fab fa-github"></i></a>
+                            <a href="https://www.linkedin.com/in/stefan-radin/" class="banner__social" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                    <div class="banner__card">
+                        <ul class="banner__list">
+                            <li class="banner__item">class <span class="text-bold">Person</span> {</li>
+                            <li class="banner__item item--padding-small">constructor() {</li>
+                            <li class="banner__item item--padding-big">this.name = <span class="text-bold">"Stefan Radin"</span>;</li>
+                            <li class="banner__item item--padding-big">this.interests = <span class="text-bold">["Development", "Design"]</span>;</li>
+                            <li class="banner__item item--padding-big">this.age = new Date().getFullYear() - <span class="text-bold">1996</span>;</li>
+                            <li class="banner__item item--padding-small">}</li>
+                            <li class="banner__item">}</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="banner__big-box has-cover" style="background-image: url(./images/main-box.svg);"></div>
+            </div>          
+        </section>
+        <section class="cards">
+            <div class="wrapper">
+                <h2 class="cards__title title">Things I love</h2>
+                <div class="cards__container">                
+                    <div class="cards__card">
+                        <i class="card__icon fab fa-html5"></i>
+                        <h3 class="card__title">HTML5</h3>
+                        <p class="card__text">Making semantically correct websites</p>
+                    </div>
+                    <div class="cards__card">
+                        <i class="card__icon fab fa-css3-alt"></i>
+                        <h3 class="card__title">CSS3</h3>
+                        <p class="card__text">Responsive and pixel perfect designs are my passion</p>
+                    </div>
+                    <div class="cards__card">
+                        <i class="card__icon fab fa-js-square"></i>
+                        <h3 class="card__title">JavaScript</h3>
+                        <p class="card__text">Adding functionality to websites with Vanilla JS or JQuery</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="about">
+            <h2 class="about__title title">About me</h2>
+            <h3 class="about__small-subtitle">Hi, I'm Stefan, a passionate Front-End Developer from Serbia. I love to design and develop responsive websites. I also enjoy learning new stuff every day.</h3>
+                <div class="about__container">
+                    <div class="wrapper">
+                        <div class="about__content">
+                            <div class="about__block">
+                                <h3 class="about__subtitle">Work Experience</h3>
+                                <h4 class="about__small-title">Front-end Developer</h4>
+                                <span class="about__text">Vega IT (1 month)</span>
+                                <span class="about__text">ForwardSlash (2 months)</span>
+                                <h4 class="about__small-title">IT Consultant</h4>
+                                <span class="about__text">JP Kikinda (August 2020 - Present)</span>
+                            </div>
+                            <div class="about__block">
+                                <h3 class="about__subtitle">Education</h3>
+                                <h4 class="about__small-title">University Singidunum</h4>
+                                <span class="about__text">Informatics and Computer Science (2015 - 2019)</span>
+                                <h4 class="about__small-title">Front-end Course</h4>
+                                <span class="about__text">FTN Informatics and Computer Science</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </section>
+        <section class="skills">
+            <h2 class="skills__title title">My Skills</h2>
+            <div class="wrapper">
+                <div class="skills__container">
+                    <div class="skill">
+                        <i class="skills__icon icon-html fab fa-html5"></i>
+                        <h4 class="skill__subtitle">HTML5</h4>
+                    </div>
+                    <div class="skill">
+                        <i class="skills__icon icon-css fab fa-css3-alt"></i>
+                        <h4 class="skill__subtitle">CSS3</h4>
+                    </div>
+                    <div class="skill">
+                        <i class="skills__icon icon-sass fab fa-sass"></i>
+                        <h4 class="skill__subtitle">SaSS</h4>
+                    </div>
+                    <div class="skill">
+                        <i class="skills__icon icon-js fab fa-js-square"></i>
+                        <h4 class="skill__subtitle">JavaScript</h4>
+                    </div>
+                    <div class="skill">
+                        <img src="./images/jquery.svg" alt="" class="skills__img">
+                        <h4 class="skill__subtitle">JQuery</h4>
+                    </div>
+                    <div class="skill">
+                        <i class="skills__icon icon-git fab fa-github"></i>
+                        <h4 class="skill__subtitle">GitHub</h4>
+                    </div>
+                    <div class="skill">
+                        <i class="skills__icon icon-figma fab fa-figma"></i>
+                        <h4 class="skill__subtitle">Figma</h4>
+                    </div>
+                    <div class="skill">
+                        <img src="./images/adobexd.svg" alt="" class="skills__img skills__img-xd">
+                        <h4 class="skill__subtitle">AdobeXD</h4>
+                    </div>
+                    <div class="skill">
+                        <i class="skills__icon icon-bs fab fa-bootstrap"></i>
+                        <h4 class="skill__subtitle">Bootstrap</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="skills__big-box"></div>
+        </section>
+        <section class="projects">
+            <h2 class="projects__title title">Projects</h2>
+            <div class="wrapper">
+                <div class="project__card">
+                    <div class="project__info">
+                        <h3 class="project__subtitle">Orto-dent Ki</h3>
+                        <p class="project__text">Orto-dent Ki is a orthopedic website. Using HTML and CSS to demonstrate what Orto-dent is all about.</p>
+                        <div class="project__btns">
+                            <a href="https://ortodentki.netlify.app/" class="project__link" target="_blank">Live Demo</a>
+                            <a href="https://github.com/sradin96/Ortodent" class="project__link link-icon" target="_blank"><i class="project__icon fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <div class="project__img-block has-cover">
+                        <img src="./images/project-ortodent.png" alt="" class="project__img">
+                    </div>
+                </div>
+                <div class="project__card">
+                    <div class="project__info">
+                        <h3 class="project__subtitle">Todo List</h3>
+                        <p class="project__text">Todo List is one of my fun projects which I used JavaScript to make simple todo list. Adding, finishing and deleting todos and it also saves your todos in LocalStorage.</p>
+                        <div class="project__btns">
+                            <a href="https://sradin96.github.io/Todo-List/" class="project__link" target="_blank">Live Demo</a>
+                            <a href="https://github.com/sradin96/Projects/tree/master/Todo%20Project" class="project__link link-icon" target="_blank"><i class="project__icon fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <div class="project__img-block has-cover">
+                        <img src="./images/project-todo.png" alt="" class="project__img">
+                    </div>
+                </div>
+                <div class="project__card">
+                    <div class="project__info">
+                        <h3 class="project__subtitle">PS4</h3>
+                        <p class="project__text">PS4 is my practice project. It's one of my first websites. When I look back to this project I see how much I learned from then.</p>
+                        <div class="project__btns">
+                            <a href="https://sradin96.github.io/PS4-Controller---Website/" class="project__link" target="_blank">Live Demo</a>
+                            <a href="https://github.com/sradin96/Projects/tree/master/PS4%20Controller%20-%20Website" class="project__link link-icon" target="_blank"><i class="project__icon fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <div class="project__img-block has-cover">
+                        <img src="./images/project-ps4.png" alt="" class="project__img">
+                    </div>
+                </div>
+                <div class="project__card">
+                    <div class="project__info">
+                        <h3 class="project__subtitle">Rock Paper Scissors</h3>
+                        <p class="project__text">Rock Paper Scissors is a game that I made with JavaScript. It was fun working on this project.</p>
+                        <div class="project__btns">
+                            <a href="https://sradin96.github.io/Rock-Paper-Scissors-Game/" class="project__link" target="_blank">Live Demo</a>
+                            <a href="https://github.com/sradin96/Projects/tree/master/Rock-Paper-Scissors%20Game" class="project__link link-icon" target="_blank"><i class="project__icon fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <div class="project__img-block has-cover">
+                        <img src="./images/project-rps.png" alt="" class="project__img">
+                    </div>
+                </div>
+                <div class="project__card">
+                    <div class="project__info">
+                        <h3 class="project__subtitle">More Comming Soon</h3>
+                        <p class="project__text">I love what I do so I will always work on new projects. Working on few new projects right now!</p>
+                        <div class="project__btns">
+                            <a href="https://sradin96.github.io/Todo-List/" class="project__link" target="_blank">Live Demo</a>
+                            <a href="https://github.com/sradin96/Projects/tree/master/Todo%20Project" class="project__link link-icon" target="_blank"><i class="project__icon fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <div class="project__img-block has-cover">
+                        <img src="./images/project-more.svg" alt="" class="project__img">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="contact">
+            <div class="wrapper">
+                <h2 class="contact__title title">Get In Touch</h2>
+                <div class="contact__container">
+                    <div class="contact__info">
+                        <i class="contact__icon fas fa-hands-helping"></i>
+                        <h3 class="contact__subtitle">Send me a Message</h3>
+                        <p class="contact__text">If you have any questions or you just want to chat, fill up the form and I will respond fast!</p>
+                        <span class="contact__subtext">You can also reach me on:</span>
+                        <a href="mailto:sradin96@gmail.com" class="contact__email contact__link">sradin96@gmail.com</a><br>
+                        <a href="tel:+381656434127" class="contact__phone contact__link">+381/65-643-4127</a>
+                    </div>
+                    <form name="contact" method="POST" class="contact__form" data-netlify="true">
+                        <div class="form__info form__block">
+                            <div class="form__name">
+                                <label for="email" class="form__text">Email</label>
+                                <input class="form__input email-js" type="email" name="email" id="email" placeholder="example@example.com">
+                                <span class="form__warning warning-email">This field can't be empty!</span>
+                            </div>
+                            <div class="form__name form__block">
+                                <label for="name" class="form__text">Name</label>
+                                <input class="form__input name-js" type="text" name="name" id="name" placeholder="Your Name">
+                                <span class="form__warning warning-name">This field can't be empty!</span>
+                            </div>
+                        </div>
+                        <div class="form__message form__block">
+                            <label class="form__text" for="message">Message</label>
+                            <textarea class="form__textarea textarea-js" name="message" id="message" placeholder="Say Hi!"></textarea>
+                            <span class="form__warning warning-textarea">This field can't be empty!</span>
+                        </div>
+                        <button type="submit" class="form__btn" id="btn"><i class="form__btn-icon fab fa-telegram-plane"></i>Submit</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="wrapper">
+            <div class="footer__container">
+                <span class="footer__text">By Stefan Radin</span>
+                <span class="footer__text">Made with love and pure HTML, CSS and JavaScript</span>
+            </div>
+        </div>
+    </footer>
+    <script src="./node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="./node_modules/@fortawesome/fontawesome-free/js/all.min.js"></script>
+    <script src="./script/script.js"></script>
+</body>
+</html>

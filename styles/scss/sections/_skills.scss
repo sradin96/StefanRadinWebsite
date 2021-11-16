@@ -1,0 +1,66 @@
+.skills {
+  margin-bottom: 100px;
+  position: relative;
+}
+
+.skills__container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.skill {
+  width: 220px;
+  height: 140px;
+  text-align: center;
+  background: $white;
+  box-shadow: 0 1px 10px -5px $gray;
+  margin: 20px 10px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
+  &:hover {
+    .skills__icon {
+      transform: scale(1.2);
+    }
+    .skills__img {
+      transform: scale(1.2);
+    }
+  }
+}
+
+.skills__icon {
+  color: $blue;
+  font-size: 46px;
+  margin-bottom: 10px;
+  transition: $transition;
+}
+
+.skills__img {
+  margin-bottom: 10px;
+  transition: $transition;
+}
+
+.skills__img-xd {
+  width: 50px;
+}
+
+.skills__big-box {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 600px;
+  height: 600px;
+  background: $blue;
+  border-radius: 12px;
+  transform: rotate(45deg) translate(-200px, 230px);
+  z-index: -1;
+  @include breakpoint('phone') {
+    transform: rotate(45deg) translate(-200px, 330px);
+  }
+}

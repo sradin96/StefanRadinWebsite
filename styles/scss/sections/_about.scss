@@ -1,0 +1,108 @@
+.about {
+  margin-bottom: 180px;
+}
+
+.about__title {
+  margin-bottom: 50px;
+}
+
+.about__small-subtitle {
+  text-align: center;
+  max-width: 450px;
+  margin: 0 auto 100px auto;
+  line-height: 32px;
+  color: $gray;
+  padding: 0 20px;
+  @include breakpoint('phone') {
+    font-size: 16px;
+  }
+}
+
+.about__container {
+  background: $blue;
+  position: relative;
+  z-index: 1;
+  &::before {
+    content: '';
+    position: absolute;
+    background: $blue;
+    width: 10000px;
+    height: 200px;
+    top: 0;
+    left: 0;
+    transform: rotate(1deg) translate(-100px, 45px);
+    z-index: -1;
+  }
+  &::after {
+    content: '';
+    position: absolute;
+    background: $white;
+    width: 10000px;
+    height: 100px;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transform: rotate(1deg) translate(-100px, 160px);
+  }
+}
+
+.about__content {
+  padding: 20px 0 70px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  @include breakpoint('touch') {
+    flex-direction: column;
+  }
+}
+
+.about__block {
+  background: $white;
+  box-shadow: 0 1px 10px -5px $gray;
+  border-radius: 12px;
+  padding: 50px;
+  max-width: 400px;
+  min-height: 320px;
+  margin: 0 10px;
+  @include breakpoint('touch') {
+    max-width: 550px;
+    width: 100%;
+    margin: 20px 0;
+    padding: 20px;
+  }
+}
+
+.about__subtitle {
+  color: $blue;
+  margin-bottom: 20px;
+  font-size: 32px;
+  text-align: center;
+}
+
+.about__small-title {
+  margin: 10px 0;
+  color: $gray;
+  font-size: 18px;
+  display: inline-block;
+}
+
+.about__text {
+  margin-bottom: 10px;
+  display: block;
+  color: $gray;
+  font-weight: 500;
+}
+
+.about__img-block {
+  z-index: 10;
+  width: 400px;
+}
+
+.about__img {
+  width: 100%;
+}
+
+.about__experience {
+  background: $white;
+  border-radius: 12px;
+}
