@@ -32,6 +32,9 @@
       transform: scale(1.2);
     }
   }
+  @include breakpoint('phone') {
+    width: 145px;
+  }
 }
 
 .skills__icon {

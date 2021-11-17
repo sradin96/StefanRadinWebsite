@@ -45,15 +45,15 @@ function contactScroll() {
 }
 
 $('.form__btn').on('click', function(e){ 
-    if($('.email-js').val().length === 0 ) {
+    if($('.email-js').val().length === 0) {
         $('.warning-email').addClass('warning-error');
         e.preventDefault();
     }
-    if($('.name-js').val().length === 0 ) {
+    if($('.name-js').val().length === 0) {
         $('.warning-email').addClass('warning-error');
         e.preventDefault();
     }
-    if($('.textarea-js').val().length === 0 ) {
+    if($('.textarea-js').val().length === 0) {
         $('.warning-email').addClass('warning-error');
         e.preventDefault();
     }
