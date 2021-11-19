@@ -14,7 +14,7 @@
 
 .footer__text {
   display: block;
-  color: $white;
+  color: $bg;
   @include breakpoint('phone') {
     margin: 10px;
     text-align: center;

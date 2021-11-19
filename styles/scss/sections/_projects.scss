@@ -8,6 +8,7 @@
   border-radius: 12px;
   box-shadow: 0 1px 10px -5px $gray;
   margin-bottom: 50px;
+  background: var(--bg-color-2);
   @include breakpoint('touch') {
     flex-direction: column;
     width: 100%;
@@ -26,7 +27,7 @@
 }
 
 .project__subtitle {
-  color: $gray;
+  color: var(--text-color);
   font-size: 32px;
   margin-bottom: 20px;
   @include breakpoint('phone') {
@@ -36,7 +37,7 @@
 
 .project__text {
   line-height: 24px;
-  color: $gray;
+  color: var(--text-color);
   margin-bottom: 90px;
   @include breakpoint('tablet') {
     margin-bottom: 30px;
@@ -55,24 +56,32 @@
 .project__link {
   margin-right: 20px;
   background: $blue;
-  color: $white;
+  color: $bg;
+  font-weight: 500;
   padding: 10px 15px;
   font-size: 14px;
   border-radius: 12px;
+  border: 2px solid $blue;
   opacity: 1;
   transition: $transition;
   &:hover {
     opacity: 0.9;
+    background: transparent;
+    color: $blue;
   }
 }
 
 .link-icon {
   border-radius: 50%;
   padding: 10px;
+  border: 0;
+  &:hover {
+    background: $blue;
+  }
 }
 
 .project__icon {
-  color: $white;
+  color: $bg;
   background: $blue;
 }
 

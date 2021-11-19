@@ -6,6 +6,7 @@
 
 body {
   font-family: 'Montserrat', sans-serif;
+  background: var(--bg-color);
 }
 
 a {
@@ -63,7 +64,7 @@ li {
 }
 
 ::-webkit-scrollbar-track {
-  background: $white;
+  background: $bg;
 }
 
 ::-webkit-scrollbar-thumb {

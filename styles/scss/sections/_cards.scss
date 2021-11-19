@@ -13,7 +13,7 @@
 
 .cards__card {
   max-width: 25%;
-  background: $white;
+  background: var(--bg-color-2);
   text-align: center;
   border-radius: 12px;
   padding: 30px;
@@ -37,7 +37,11 @@
 }
 
 .card__title {
-  color: $gray;
+  color: var(--text-color);
   font-size: 20px;
   margin-bottom: 15px;
+}
+
+.card__text {
+  color: var(--text-color);
 }

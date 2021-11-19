@@ -1,8 +1,35 @@
 $blue: #5d82e8;
-$white: #ffffff;
+$bg: #ffffff;
+$bg-panel: #ffffff;
 $black: #000000;
-$gray: #232323;
+$gray: #333333;
 $lite-gray: #e2e2e2;
-$warning: #d40000;
+$warning: #dd0000;
+
+html {
+  --bg-color: #ffffff;
+  --bg-color-2: #ffffff;
+  --blue-color: #5d82e8;
+  --black: #000000;
+  --text-color: #333333;
+  --lite-gray: #e2e2e2;
+  --bg-checkbox: #5d82e8;
+  --warning:: #dd0000;
+  --text-color-2: #5d82e8;
+  --logo: url("../../images/logo.png");
+}
 
 $transition: all 0.4s ease-in;
+
+html[data-theme='dark'] {
+  --bg-color: #333333;
+  --bg-color-2: #434343;
+  --blue-color: #5d82e8;
+  --black: #000000;
+  --text-color: #ffffff;
+  --lite-gray: #ffffff;
+  --bg-checkbox: #5d82e8;
+  --warning: #ff7676;
+  --text-color-2: #ffffff;
+  --logo: url("../../images/logo-dark.png");
+}

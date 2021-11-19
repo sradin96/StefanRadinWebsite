@@ -21,14 +21,19 @@
 }
 
 .banner__content {
+  z-index: 2;
   @include breakpoint('phone') {
     text-align: center;
     margin-bottom: 50px;
   }
 }
 
+.banner__small-text {
+  color: var(--text-color);
+}
+
 .banner__title {
-  color: $gray;
+  color: var(--text-color);
   font-size: 56px;
 }
 
@@ -38,6 +43,7 @@
   text-transform: uppercase;
   letter-spacing: 2px;
   margin-bottom: 30px;
+  color: var(--text-color);
 }
 
 .banner__btn {
@@ -46,13 +52,13 @@
   background: $blue;
   font-weight: 500;
   font-size: 14px;
-  color: $white;
+  color: $bg;
   border-radius: 12px;
   margin-bottom: 20px;
   border: 3px solid $blue;
   transition: $transition;
   &:hover {
-    background: $white;
+    background: transparent;
     color: $blue;
   }
 }
@@ -65,10 +71,11 @@
 }
 
 .banner__card {
-  background: $white;
+  background: var(--bg-color-2);
   padding: 30px;
   border-radius: 12px;
-  box-shadow: 0 1px 10px -5px $blue;
+  box-shadow: 0 1px 10px -5px $gray;
+  z-index: 2;
   @include breakpoint('touch') {
     background: $blue;
     box-shadow: 0 1px 10px -5px $gray;
@@ -80,9 +87,9 @@
 
 .banner__item {
   margin: 0 0 10px 0px;
-  color: $blue;
+  color: var(--text-color-2);
   @include breakpoint('touch') {
-    color: $white;
+    color: $bg;
   }
 }
 
@@ -100,7 +107,7 @@
   position: absolute;
   top: 50%;
   right: 0;
-  z-index: -1;
+  z-index: 0;
   transform: rotate(125deg) translate(-900px, -120px);
   @include breakpoint('touch') {
     display: none;

@@ -36,7 +36,7 @@
   &::after {
     content: '';
     position: absolute;
-    background: $white;
+    background: var(--bg-color);
     width: 10000px;
     height: 100px;
     left: 0;
@@ -57,7 +57,7 @@
 }
 
 .about__block {
-  background: $white;
+  background: var(--bg-color-2);
   box-shadow: 0 1px 10px -5px $gray;
   border-radius: 12px;
   padding: 50px;
@@ -81,7 +81,7 @@
 
 .about__small-title {
   margin: 10px 0;
-  color: $gray;
+  color: var(--text-color);
   font-size: 18px;
   display: inline-block;
 }
@@ -89,7 +89,7 @@
 .about__text {
   margin-bottom: 10px;
   display: block;
-  color: $gray;
+  color: var(--text-color);
   font-weight: 500;
 }
 
@@ -103,6 +103,6 @@
 }
 
 .about__experience {
-  background: $white;
+  background: $bg;
   border-radius: 12px;
 }
